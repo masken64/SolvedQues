@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int armstrong(int a){
+int arm(int a){
     int sum =0;
     int r;
     while(a!=0){
@@ -18,6 +18,6 @@ int main()
 {
     int a;
     cin>>a;
-    cout<<armstrong(a);
+    cout<<arm(a);
     
 }
