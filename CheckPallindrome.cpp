@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool isPalindrome(int x) {
+bool Palindrome(int x) {
         if (x < 0) return false;
         long r=0;
         int y=x;
@@ -16,7 +16,7 @@ bool isPalindrome(int x) {
 int main(){
     int x=0;
     cin>>x;
-    cout<<isPalindrome(x);
+    cout<<Palindrome(x);
     
 }
 
