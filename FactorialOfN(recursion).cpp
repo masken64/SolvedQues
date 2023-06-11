@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-void n(int a, int sum){
+void fac(int a, int sum){
      
      if(a<1) {
          
@@ -8,12 +8,12 @@ void n(int a, int sum){
          
      }
      
-     n(a-1,sum*a);
+     fac(a-1,sum*a);
 }
 int main(){
     int a;
     
     cin>>a;
-    n(a,1);
+    fac(a,1);
 
 }
