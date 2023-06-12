@@ -1,14 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
-void fac(int a, int sum){
+void fac(int a, int f){
      
      if(a<1) {
          
-         cout<<sum; return;
+         cout<<f; return;
          
      }
      
-     fac(a-1,sum*a);
+     fac(a-1,f*a);
 }
 int main(){
     int a;
