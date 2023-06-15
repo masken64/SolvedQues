@@ -9,6 +9,7 @@ bubble (int a[], int n)
 	{
 	  if (a[j] > a[j + 1])
 	    {
+		    // can also use swap(a[j],a[j+1]);
 	      int temp = a[j + 1];
 	      a[j + 1] = a[j];
 	      a[j] = temp;
