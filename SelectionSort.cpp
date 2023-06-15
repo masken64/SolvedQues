@@ -13,6 +13,7 @@ sort (int a[], int n)
 	      mini = j;
 	    }
 	}
+	    //can also use swap(a[mini], a[i]);
       int temp = a[mini];
       a[mini] = a[i];
       a[i] = temp;
