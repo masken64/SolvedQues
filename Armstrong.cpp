@@ -1,23 +1,32 @@
-// checking if a number is an armstrong number
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-int arm(int a){
+void checkArm(int b){
     int sum =0;
-    int r;
-    while(a!=0){
-        r=a%10;
-        sum = sum+ r*r*r;
-        a=a/10;
+
+ 
+    while(b!=0){
+        b=b%10;
+        sum = sum + b*b*b;
+        b=b/10;
     }
-    return sum;
+    if(b==sum){
+        cout<<"True "<<sum;
+    }
+    else {
+        cout<<"False "<<sum;
+    }
+    
 }
 
 int main()
 {
     int a;
+    cout<<"Please enter a number - "<<endl;
     cin>>a;
-    cout<<arm(a);
+    checkArm(a);
     
-}
+    }
+  
+
