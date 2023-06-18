@@ -2,6 +2,12 @@
 
 using namespace std;
 
+void merge(vector<int> &a, int low, int mid, int high){
+    int left = low;
+    int right = mid+1;
+    // incompelete
+}
+
 
 void mergeSort(int a[], int low, int high){
     if(low>=high) return;
