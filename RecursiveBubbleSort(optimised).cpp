@@ -1,5 +1,5 @@
 //optimised version of Recursive Bubble Sort by adding ds 
-//O(n)
+//O(n) - avg case, o(n2) - worst case
 #include <iostream>
 
 using namespace std;
