@@ -2,7 +2,7 @@
 using namespace std;
 
 void merge(vector<int> &arr, int low, int mid, int high) {
-    vector<int> temp; // temporary array
+    vector<int> temp; // temporary array temp
     int left = low;      // starting index of left half of arr
     int right = mid + 1;   // starting index of right half of arr
 
