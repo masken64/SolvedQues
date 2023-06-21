@@ -17,3 +17,4 @@ int main(){
     cin>>n;
     cout<<fib(n)<<" ";
 }
+//can also use recursion 
