@@ -29,4 +29,5 @@ int main()
     
     }
   
+// can also use a while loop.
 
