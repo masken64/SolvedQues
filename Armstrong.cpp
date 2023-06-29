@@ -4,7 +4,7 @@ using namespace std;
 
 void checkArm(int b){
     int sum =0;
-
+//
  
     while(b!=0){
         b=b%10; //extraction of last digit.
