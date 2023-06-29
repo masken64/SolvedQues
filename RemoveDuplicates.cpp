@@ -4,7 +4,7 @@
 //It does not matter what you leave beyond the first k elements.
 //Note: Return k after placing the final result in the first k slots of the array.
 
-//BruteForce
+//BruteForce - Time complexity: O(n*log(n))+O(n) , Space Complexity: O(n) 
 
 #include <bits/stdc++.h>
 using namespace std;
