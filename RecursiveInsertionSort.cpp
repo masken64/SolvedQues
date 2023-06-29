@@ -10,7 +10,7 @@ void insertion_sort(int arr[], int i, int n) {
     while (j > 0 && arr[j - 1] > arr[j]) {
         int temp = arr[j - 1];
         arr[j - 1] = arr[j];
-        arr[j] = temp;
+        arr[j] = temp;   // swapping, can also use swap(a[j-1], a[j].
         j--;
     }
 
