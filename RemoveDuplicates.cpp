@@ -32,3 +32,29 @@ int main()
         cout<<arr[i]<<" ";
     }
 }
+
+
+//Optimised - Time Complexity: O(N), Space Complexity: O(1)
+
+#include<bits/stdc++.h>
+using namespace std;
+int removeDup(int arr[], int n){
+    int i = 0;
+    for(int j=1;j<n;j++){
+        if(arr[i]!=arr[j]){
+            i++;
+            arr[i]=arr[j];
+            
+        }
+    }
+    return i+1;
+}
+int main(){
+    int arr[]= {1,1,1,1,4,4,4,3,3,3,2};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    int k = removeDup(arr,n);
+    for(int i =0; i<k;i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
