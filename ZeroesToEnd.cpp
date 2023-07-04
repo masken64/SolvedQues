@@ -42,5 +42,40 @@ int main(){
 //Time Complexity: O(N), N = size of the array.
 //Reason: We have used 2 loops and using those loops, we are basically traversing the array once.
 //Space Complexity: O(1) as we are not using any extra space to solve this problem.
+
+#include <bits/stdc++.h>
+
+using namespace std;
+vector<int> removeZero(vector<int> a, int n){
+    int j =-1;
+    for(int i =0;i<n;i++){
+        if(a[i]==0){
+            j =i;
+            break;
+        }
+    }
+    
+    if(j==-1) return a;
+    
+    for(int i = j+1;i<n;i++){
+        if(a[i]!=0){
+            swap(a[i],a[j]);
+            j++;
+        }
+    }
+    
+    return a;
+    
+}
+int main()
+{
+    vector <int> a = {3,2,1,0,9,0,0,7,6,4};
+    int n = a.size();
+    vector<int> res = removeZero(a,n);
+    for(auto &it : res){
+        cout<<it<<" ";
+    }
+    
+}
  
 
