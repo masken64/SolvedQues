@@ -1,3 +1,11 @@
+//https://github.com/rishabkumar7/CloudNotes/blob/master/CPP.md#aws-certfied-cloud-practitioner
+//https://docs.google.com/document/d/1QKMaGvjx2-VdSO-MH4o7apk0mdlPrSbuhgrUL0I4s-g/edit
+//https://digitalcloud.training/category/aws-cheat-sheets/aws-cloud-practitioner/
+
+
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
  
