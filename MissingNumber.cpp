@@ -32,4 +32,21 @@ int main(){
 
 
 //optimised 
-
+#include<bits/stdc++.h>
+using namespace std;
+int compute(vector<int> a,int n){
+    int x1 = 0;
+    int x2 =0;
+    for(int i =0; i <n-1;i++){
+        x1 = x1^a[i];
+        x2 = x2^(i+1);
+    }
+    x2 = x2^n;
+    return(x1^x2);
+}
+int main(){
+    vector <int> a = {1,2,3,4,6};
+    int n = a.size();
+    int missN = compute(a,n);
+    cout<<missN;
+}
