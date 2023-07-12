@@ -24,7 +24,36 @@ int main(){
     cout<<maxSubarray;
     }
 
-
+//optimised 
+#include<bits/stdc++.h>
+using namespace std;
+int compute(vector<int> a, int k, int n){
+    int l=0;
+    int r =0;
+    int sum=a[0];
+    int len=0;
+    while(r<n){
+        while(l<r && sum>k){
+            sum = sum - a[l];
+            l++;
+        }
+        if(sum==k){
+            len = max(len,r-l+1);
+        }
+        r++;
+        if(r<n){
+            sum = sum + a[r];
+    }
+    }
+    return len;
+}
+int main(){
+    vector <int> a = {2,3,5,1,9};
+    int k = 10;
+    int n = a.size();
+    int ans = compute(a,k,n);
+    cout<<ans;
+}
 
 
 
