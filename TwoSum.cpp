@@ -53,6 +53,34 @@ int main()
     }
 }
 
+//optimised 
+
+#include <bits/stdc++.h>
+
+using namespace std;
+string compute(vector<int> a , int n, int k){
+    vector<int> ans;
+    int l = 0;
+    int r = n-1;
+    while(l<r){
+        int sum = a[l]+a[r];
+        if(sum == k) return "Yes";
+        else if(sum<k) l++;
+        else r--;
+    }
+    
+    return "No";
+}
+
+int main()
+{
+    vector<int> a = {2,6,5,8,11};
+    int n = a.size();
+    int k = 14;
+    string s = compute(a,n,k);
+    cout<<s;
+}
+
 
 
 
