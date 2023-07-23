@@ -33,3 +33,34 @@ int n = sizeof(a)/sizeof(a[0]);
 compute(a,n);
 }
 
+//optimised 
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+void compute(int a[], int  n){
+    int pi =0;
+    int ni = 1;
+    vector<int> ans(n,0);
+    for(int i =0;i<n;i++){
+        if(a[i]<0){
+            ans[ni]=a[i];
+            ni=ni+2;
+        }
+        else{
+            ans[pi]=a[i];
+            pi=pi+2;
+        }
+    }
+    for(auto it : ans){
+        cout<<it<<" ";
+    }
+}
+
+int main()
+{
+int a[] = {1,2,-4,-5};
+int n = sizeof(a)/sizeof(a[0]);
+compute(a,n);
+}
