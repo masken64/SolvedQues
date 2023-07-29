@@ -13,7 +13,7 @@ vector<int> compute(vector<int> a, int n){
         reverse(a.begin(),a.end());
         return a;
     }
-    
+   
     for(int i=n-1;i>index;i--){
         if(a[i]>a[index]){
             swap(a[i],a[index]);
