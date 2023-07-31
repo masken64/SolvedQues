@@ -11,6 +11,7 @@ int compute (vector<int> a, int n, int k){
             for(int x=i;x<=j;x++){
                 sum=sum+a[x];
             }
+			
             if(sum==k){
                 count++;
             }
