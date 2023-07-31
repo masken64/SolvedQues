@@ -18,6 +18,7 @@ int compute (vector<int> a, int n, int k){
     }
     return count;
 }
+
 int main(){
     vector<int> a = {3, 1, 2, 4};
     int k=6;
