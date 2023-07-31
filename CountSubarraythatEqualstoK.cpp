@@ -25,3 +25,15 @@ int main(){
     int ans = compute(a,n,k);
     cout<<ans;
 }
+
+
+//optimised 
+
+
+
+
+
+
+
+
+
