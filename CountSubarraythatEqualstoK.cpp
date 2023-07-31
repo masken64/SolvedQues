@@ -26,14 +26,3 @@ int main(){
     cout<<ans;
 }
 
-
-//optimised 
-
-
-
-
-
-
-
-
-
