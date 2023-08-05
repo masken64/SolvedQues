@@ -21,6 +21,7 @@ class Solution {
   }
 };
 
+
 //optimied 
 #include<bits/stdc++.h>
 using namespace std;
