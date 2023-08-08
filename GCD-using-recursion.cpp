@@ -7,6 +7,7 @@ int gcd(int a, int b){
     return gcd(b,a%b); //eucledian algo by recursion
     
 }
+
 int main(){
     int a; int b;
     cin>>a>>b;
