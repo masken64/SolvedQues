@@ -12,7 +12,6 @@ int main ()
 }
 
 //optimised best solution
-//O(N), O(1)
 #include<bits/stdc++.h>
 using namespace std;
 int secondSmallest(int arr[],int n)
