@@ -33,10 +33,7 @@ int main()
          << ans << "\n";
     return 0;
 }
-
-
-
-
+//optimised
 #include <bits/stdc++.h>
 using namespace std;
 
