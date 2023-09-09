@@ -53,3 +53,28 @@ int main(){
 }			   
 
 *****************************************************************************
+//Write a program to Change Decimal Number to Binary
+
+#include<bits/stdc++.h>
+using namespace std;
+int compute(int n){
+    int rem, i=1;
+    int ans = 0;
+    while(n!=0){
+        int rem = n%2;
+        n=n/2;
+        ans = ans+rem*i;  
+        i=i*10;
+        
+    }
+    
+    return ans;
+}
+int main(){
+    int n;
+    cin>>n;
+    int ans = compute(n);
+    cout<<ans;
+}
+
+************************************************************************
