@@ -23,3 +23,33 @@ int main(){
     int ans = compute(a,b);
     cout<<ans;
 }
+
+******************************************************************************************
+
+//Write a program to find the sum of A.P series
+
+/*Sum of arithmetic series is ((n / 2) * (2 * a + (n - 1) * d))
+           Where
+               a is First term
+               d is Common difference
+               n is No of terms */
+
+#include<bits/stdc++.h>
+using namespace std;
+int compute(int a, int d, int n){
+    int sum = 0;
+    for(int i =0; i<n;i++){
+        sum = sum+a;
+        a= a+d;
+ 
+    }
+    return sum;
+}
+int main(){
+    int a, d,n;
+    cin>>a>>d>>n;
+    int ans = compute(a,d,n);
+    cout<<ans;
+}			   
+
+*****************************************************************************
