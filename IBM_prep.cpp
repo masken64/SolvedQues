@@ -129,3 +129,25 @@ int main (){
     cin>>s;
     cout<<compute(s);
 }
+
+*****************************************************************************************
+
+//String Pallindrome
+#include<bits/stdc++.h>
+using namespace std;
+bool compute(string s){
+    int l=0;
+    int n = s.length()-1;
+    while(n>l){
+        if(s[n--]!=s[l++]){
+            return false;
+        }
+
+    }
+    return true;
+}
+int main (){
+    string s;
+    cin>>s;
+    cout<<compute(s);
+}
