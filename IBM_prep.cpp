@@ -107,3 +107,25 @@ int main(){
     cin>>n;
     fibTriangle(n);
 }
+
+*************************************************************************************
+
+//Remove vowel from a string 
+
+#include<bits/stdc++.h>
+using namespace std;
+string compute(string s){
+    vector<char> v = {'a','e','i','o','u','A','E','I','O','U'};
+    for(int i = 0; i<s.length();i++){
+        if(find(v.begin(),v.end(),s[i])!=v.end()){
+            s = s.replace(i,1,"");
+            i=i-1;
+        }
+    }
+    return s;
+}
+int main (){
+    string s;
+    cin>>s;
+    cout<<compute(s);
+}
