@@ -173,3 +173,24 @@ int main(){
     cin>>a;
     cout<<compute(a);
 }
+***********************************************************************************
+//fibonacci
+
+#include<bits/stdc++.h>
+using namespace std;
+void compute(int a){
+   int f[a+1];
+   f[0]=1;
+   f[1]=1;
+   for(int i =2;i<a;i++){
+       f[i]= f[i-1]+f[i-2];
+   }
+   for(int i =0;i<a;i++){
+       cout<<f[i]<<" ";
+   }
+}
+int main(){
+    int a;
+    cin>>a;
+    compute(a);
+}
