@@ -151,3 +151,25 @@ int main (){
     cin>>s;
     cout<<compute(s);
 }
+
+//Armstrong 
+#include<bits/stdc++.h>
+using namespace std;
+bool compute(int a){
+    int sum =0;
+    int n =a;
+    int rem = 0;
+    while(n!=0){
+        rem=n%10;
+        sum = sum+ rem*rem*rem;
+        n=n/10;
+        
+    }
+    if(sum==a) return true;
+    else return false;
+}
+int main(){
+    int a;
+    cin>>a;
+    cout<<compute(a);
+}
